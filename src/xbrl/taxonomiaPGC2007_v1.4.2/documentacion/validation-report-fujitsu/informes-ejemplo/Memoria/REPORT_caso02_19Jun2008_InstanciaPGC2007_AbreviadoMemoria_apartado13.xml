@@ -1,0 +1,1009 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Fujitsu XWand Reporting Module</Author>
+  <Created>2005-01-24T15:28:13Z</Created>
+  <Company>Fujitsu Limited Inc.</Company>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8670</WindowHeight>
+  <WindowWidth>11715</WindowWidth>
+  <WindowTopX>240</WindowTopX>
+  <WindowTopY>45</WindowTopY>
+  <ActiveSheet>0</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="11"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="summaryStyleP">
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="summaryStyleSection">
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="12" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="summaryStyleTitle">
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="16" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="summaryStylePrefixPre">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="summaryStylePrefixURI">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="summaryStylePrefixHeader">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="styleColumnHeader">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="9" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="styleColumnSectionNum">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="styleColumnDescription">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="styleColumnStatus">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="9"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="detailStyleEmptyCell">
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="9"/>
+  </Style>
+  <Style ss:ID="detailStyleOddCell">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleOddCellT">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleOddCellM">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleOddCellB">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleEvenCell">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFFCC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleEvenCellT">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFFCC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleEvenCellM">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFFCC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleEvenCellB">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="9"/>
+   <Interior ss:Color="#FFFFCC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleMustTop">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleMustBottom">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleSectionTop">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleSectionMid">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleSectionBottom">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleShouldTop">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#FF9900" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleShouldBottom">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#FF9900" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleMayTop">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#00FF00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleMayBottom">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#00FF00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="detailStyleTitle">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="16" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="detailStyleSubTitle">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="SUMMARY">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="87" x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:AutoFitWidth="0" ss:Width="152.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="233.25"/>
+   <Row ss:Index="2" ss:Height="19.5">
+    <Cell ss:StyleID="summaryStyleTitle">
+          <Data ss:Type="String">XBRL Docments VALIDATION SUMMARY</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="19.5">
+    <Cell ss:StyleID="summaryStyleTitle"/>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Date Tested</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">2010-12-31</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP"/>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Documents Tested</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">C:\taxonomiaPGC2007_v1.4.2\InformesEjemplo\Memoria\caso02_19Jun2008_InstanciaPGC2007_AbreviadoMemoria_apartado13.xbrl</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP"/>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP"/>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="summaryStyleSection">
+          <Data ss:Type="String">XBRL Validation Result</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Errors</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="Number">0</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Warnings </Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="Number">0</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Information</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="Number">0</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP"/>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleSection">
+          <Data ss:Type="String">XBRL Dimensions Validation Result</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Errors</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="Number">0</Data>
+        </Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Warnings </Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="Number">0</Data>
+        </Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP"/>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="summaryStyleSection">
+          <Data ss:Type="String">FRTA validation Result</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">MUST violations</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Not tested.</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">SHOULD violations</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Not tested.</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">MAY violations</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Not tested.</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP"/>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="summaryStyleSection">
+          <Data ss:Type="String">FRIS validation Result</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP"/>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">MUST violations</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Not tested.</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">SHOULD violations</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Not tested.</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">MAY violations</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStyleP">
+          <Data ss:Type="String">Not tested.</Data>
+        </Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="summaryStyleSection">
+          <Data ss:Type="String">Prefix Mapping Table</Data>
+        </Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="summaryStylePrefixHeader">
+          <Data ss:Type="String">Prefix</Data>
+        </Cell>
+    <Cell ss:StyleID="summaryStylePrefixHeader">
+          <Data ss:Type="String">Namespace URI</Data>
+        </Cell>
+   </Row>
+  <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07abreviado</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/modelo-abreviado/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07a</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/cuentas/abreviado/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo0</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado0/IdentificacionGeneral/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07mc-apdo0</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/apartado0/IdentificacionGeneral/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07m-roles</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/roles/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-gen-ex</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/gen-ex/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-est-gen</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/est-gen/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-types</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/types/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-gen-bas</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/gen-bas/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-eco-bas</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/eco-bas/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-dat-inf</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/dat-inf/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-rel</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/rel/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-lc-es</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/lc-es/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-lc-int</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/lc-int/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">dgi-cnae-09</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.xbrl.org.es/es/2008/dgi/gp/lc-cnae-2009/2008-01-30</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07mc-na</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/normalAbreviado/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07mc-ap</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/abreviadoPymes/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-ref</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/referenceParts/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-a-bal</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/cuentas/abreviado/balance/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-a</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/abreviado/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-c-ap</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/comun-abreviadopymes/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-types</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/types/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-c-na</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/comun-normalabreviado/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-roles</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/roles/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-a-pyg</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/cuentas/abreviado/PerdidasGanancias/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-a-pnA</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/cuentas/abreviado/patrimonioNeto/A/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07a-etcpn</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/cuentas/abreviado/patrimonioNeto/B/EstadoTotalCambiosPatrimonioNeto/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07a-d-vs</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/cuentas/abreviado/EstadoTotalCambiosPatrimonioNeto/VariacionSaldo/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07cbs-dvs</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/cuentas/comunbase/EstadoTotalCambiosPatrimonioNeto/VariacionSaldo/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07a-d-pn</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/cuentas/abreviado/EstadoTotalCambiosPatrimonioNeto/PatrimonioNeto/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07cbs-dpn</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/cuentas/comunbase/EstadoTotalCambiosPatrimonioNeto/PatrimonioNeto/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo14</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado14/InformacionMedioAmbiente/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07am</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/ModeloAbreviado/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo2</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado2/BasesPresentacionCuentasAnuales/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo3</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado3/AplicacionResultados/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo4</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado4/NormasRegistroValoracion/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo5</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado5/InmovilizadoMaterialIntangibleInversionesInmoviliarias/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-d-inm</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/InmovilizadoMaterialIntangibleInversionesInmobiliarias/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo6</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado6/ActivosFinancieros/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07d-clase</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/ClasesInstrumentosFinancieros/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07d-reclsf</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/ReclasificacionInstrumentosFinancieros/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo7</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado7/PasivosFinancieros/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo8</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado8/FondosPropios/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo9</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado9/SituacionFiscal/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07mc-bs</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/base/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-d-sf</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviado/SituacionFiscal/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo10</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado10/IngresosGastos/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo11</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado11/SubvencionesDonancionesLegados/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo12</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado12/OperacionesPartesVinculadas/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07m-d-pv</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/PartesVinculadas/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo13</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado13/OtraInformacion/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07m-d-cp</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/CategoriasProfesionales/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-apdo15</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/apartado15/AplazamientosPago/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07d-aplaz</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/AplazamientosPagoPagosRealizadosPendientes/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07ma-rsm</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/abreviada/resumen/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc-07-c-bs</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/comun-base/2009-01-01</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+        <Cell ss:StyleID="summaryStylePrefixPre">
+          <Data ss:Type="String">pgc07d-plzven</Data>
+        </Cell>
+        <Cell ss:StyleID="summaryStylePrefixURI">
+          <Data ss:Type="String">http://www.icac.meh.es/es/fr/gaap/pgc07/memoria/comun/PlazoVencimientoInstrumentosFinancieros/Dimension/2009-01-01</Data>
+        </Cell>
+      </Row>
+    </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <DoNotDisplayGridlines/>
+   <PageSetup>
+    <Header x:Margin="0.51200000000000001"/>
+    <Footer x:Margin="0.51200000000000001"/>
+    <PageMargins x:Bottom="0.98399999999999999" x:Left="0.78700000000000003" x:Right="0.78700000000000003" x:Top="0.98399999999999999"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>0</ActiveRow>
+     <ActiveCol>0</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="XBRL_Details">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="1" x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:AutoFitWidth="0" ss:Width="39"/>
+   <Column ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="495.75"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="styleColumnHeader">
+          <Data ss:Type="String">No.</Data>
+        </Cell>
+    <Cell ss:StyleID="styleColumnHeader">
+          <Data ss:Type="String">Type</Data>
+        </Cell>
+    <Cell ss:StyleID="styleColumnHeader">
+          <Data ss:Type="String">Details</Data>
+        </Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Dimension_Details">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="7" x:FullColumns="1" x:FullRows="1" ss:StyleID="detailStyleEmptyCell" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="22.5">
+   <Column ss:StyleID="detailStyleEmptyCell" ss:AutoFitWidth="0" ss:Width="645.75"/>
+   <Row ss:Height="30">
+    <Cell ss:StyleID="detailStyleTitle">
+          <Data ss:Type="String">XBRL Dimensions Validation Result Details</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="17.25">
+    <Cell ss:StyleID="detailStyleSubTitle">
+          <Data ss:Type="String">Document: C:\taxonomiaPGC2007_v1.4.2\InformesEjemplo\Memoria\caso02_19Jun2008_InstanciaPGC2007_AbreviadoMemoria_apartado13.xbrl</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="18">
+    <Cell ss:StyleID="detailStyleMustTop">
+          <Data ss:Type="String">Error Details</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="18">
+    <Cell ss:StyleID="detailStyleMustBottom">
+          <Data ss:Type="String">Count=0</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="18"/>
+   <Row ss:Height="18">
+    <Cell ss:StyleID="detailStyleShouldTop">
+          <Data ss:Type="String">Warning Details</Data>
+        </Cell>
+   </Row>
+   <Row ss:Height="18">
+    <Cell ss:StyleID="detailStyleShouldBottom">
+          <Data ss:Type="String">Count=0</Data>
+        </Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <DoNotDisplayGridlines/>
+  </WorksheetOptions>
+ </Worksheet>
+ 
+ 
+ 
+ 
+</Workbook>
